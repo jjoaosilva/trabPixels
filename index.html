@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <div class="slider fullscreen ">
+    <ul class="slides">
+      <li>
+        <img src="imgs/Alone1.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Se um dia você se encontrasse sozinho no espaço.</h3>
+          <h5 class="light grey-text text-lighten-3">O que você faria?</h5>
+        </div>
+      </li>
+      <li>
+        <img src="imgs/desistir1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Você desistiria?</h3>
+          <button class="btn waves-effect grey lighten-2" style="color: black" type="submit" name="action">
+            <a style="color: black" href="gameOver.html">Desistiria</a>
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </li>
+      <li>
+        <img src="imgs/lutar1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Ou você lutaria?</h3>
+          <button class="btn waves-effect grey lighten-2" style="color: black" type="submit" name="action">
+            <a style="color: black" href="lutaria1.html">Lutaria</a>
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <!--  Scripts-->
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+  </script>
+  </body>
+</html>

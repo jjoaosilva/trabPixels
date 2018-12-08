@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <div class="slider fullscreen ">
+    <ul class="slides">
+      <li>
+        <img src="imgs/final1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Então você teria que estar preparado parado para o pior!</h3>
+        </div>
+      </li>
+      <li>
+        <img src="imgs/final2.jpg"> <!-- random image -->
+        <div class="caption center-align ">
+          <h3 style="color: light-green lighten-5">E apoiar-se sempre nos pequenos resultados!</h3>
+        </div>
+      </li>
+      <li>
+        <img src="imgs/final3.jpg"> <!-- random image -->
+        <div class="caption center-align ">
+          <h3 style="color: light-green lighten-5">No fim você perceberá que sempre foi capaz de coisas incríveis!</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <!--  Scripts-->
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+  </script>
+  </body>
+</html>
